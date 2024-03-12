@@ -1,0 +1,78 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(106, 184, 106);
+}
+
+
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con 50% de transparencia */
+    padding: 10px; /* Espaciado interno para el contenido */
+    color: black !important; /* Cambiar el color del texto a negro */
+    font-size: 20px !important; /* Aumentar el tamaño del texto a 20px */
+}
+
+a{
+   
+        color: black; /* Color del texto */
+    
+}
+main{
+    background-image: url('./img/formosa.jpg');
+    
+}
+
+
+.carousel-item img {
+    max-width: 80%;
+    height: 80%;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con 70% de transparencia */
+    padding: 20px; /* Espaciado interno para el contenido */
+    color: black; /* Color del texto */
+}
+
+div#recetas {
+    background-color: rgb(106, 184, 106);
+    background-image: url('./img/cocina.png');
+   
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.863); /* Transparencia del 50% (50% opacidad) */
+    width: 50%; /* Ancho de la tarjeta */
+    margin: 10px auto; /* Centrar la tarjeta en la página horizontalmente */
+    padding: 20px; /* Espaciado interno de la tarjeta */
+    border-radius: 10px; /* Borde redondeado de la tarjeta */
+   
+}
+
+/* Media queries para hacer la página responsive */
+@media (max-width: 768px) {
+    /* Ajustes para pantallas más pequeñas */
+    .carousel {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes para pantallas extra pequeñas */
+    .carousel {
+        margin-top: 5px;
+    }
+}
+.carousel-item img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  header {
+    background-color: darkgreen;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el tamaño del header */
+    background-position: center; /* Centra la imagen de fondo */
+    height: 5rem;
+}
