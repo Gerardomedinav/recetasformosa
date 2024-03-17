@@ -16,7 +16,7 @@ function mostrarReceta(event) {
         <div class="card-body">
           <h5 class="card-title">Receta de la Sopa Paraguaya </h5>
           <h2>Ingredientes:</h2>
-          <ul>
+          <ul id="ingredientes">
               <li>1/2 kilo de harina de maíz</li>
               <li>300 gramos queso tipo paraguay</li>
               <li>150 gramos de grasa de cerdo o manteca</li>
@@ -52,7 +52,7 @@ function mostrarReceta(event) {
           <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./img/olla-caliente.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Recetas Formoseñas ¡Jhetereï!
+            Volver!
           </a>
           <div>
       </div>

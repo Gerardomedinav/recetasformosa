@@ -15,14 +15,46 @@ body {
     font-size: 20px !important; /* Aumentar el tamaño del texto a 20px */
 }
 
+.navbar-collapse {
+    z-index: 1000; /* Ajusta el valor según sea necesario para asegurarte de que aparezca por encima de todo el contenido */
+  }
+
+  span.navbar-toggler-icon {
+    color: black !important; /* Cambia el color a negro */
+    z-index: 1000; /* Ajusta el valor según sea necesario para asegurarte de que aparezca por encima de todo el contenido */
+  }
+
+  #navbarScroll {
+    padding: 10px;
+  }
+
+  #footer {
+    text-align: center;
+    margin: 15px;
+  }
+  
+  #iconos2 {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  
+  button.navbar-toggler.collapsed {
+    color: black !important; /* Cambia el color a negro */
+    z-index: 10001; 
+  }
 a{
    
         color: black; /* Color del texto */
+        margin: 20 px;
     
 }
-main{
+main {
     background-image: url('./img/formosa.jpg');
-    
+    background-repeat: no-repeat;
+    background-size: cover;   
 }
 
 
@@ -64,6 +96,23 @@ div#recetas {
     .carousel {
         margin-top: 5px;
     }
+    p {
+        font-size: 9px; /* Puedes ajustar el tamaño de la fuente según tus necesidades */
+    }
+    h2{
+        font-size: 15px;
+    }
+    #ingredientes{
+        font-size: 10px;
+    }
+    .navbar{
+        background-color: cadetblue;
+        z-index: 10000;
+    }
+    #navbarScroll {
+       margin-left: 0rem !important;
+    }
+  
 }
 .carousel-item img {
     display: block;
@@ -75,4 +124,77 @@ div#recetas {
     background-size: cover; /* Ajusta la imagen para cubrir todo el tamaño del header */
     background-position: center; /* Centra la imagen de fondo */
     height: 5rem;
+}
+
+.d-none {
+    display: block !important; /* Cambia display de none a block para hacerlo visible */
+}
+
+#iconos {
+    margin-left: 20rem;
+
+}
+#navbarScroll {
+    margin-left: 10rem;
+}
+
+#mapa {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.mt-5, .my-5 {
+    margin-top: 3rem !important;
+    background-color: azure;
+    opacity: 80%;
+    border-radius: 10px; /* Redondea los bordes */
+    border: 2px solid green; /* Establece un borde de color verde de 2px */
+}
+#aqui{
+    background-color: azure;
+    opacity: 80%;
+    border-radius: 10px; /* Redondea los bordes */
+    border: 2px solid green; /* Establece un borde de color verde de 2px */
+
+}
+#contacto {
+    display: flex;
+    flex-direction: column;
+}
+.btn.btn-primary {
+    background-color: green; /* Cambia el color de fondo a verde */
+    margin: 10px; /* Añade un margen de 10px en todos los lados del botón */
+}
+
+iframe {
+    border-radius: 10px; /* Redondea los bordes */
+    border: 2px solid green; /* Establece un borde de color verde de 2px */
+
+}
+p {
+    text-align: justify; /* Justifica el texto */
+    white-space: pre-line; /* Mantiene los saltos de línea */
+}
+
+#footer {
+    text-align: center;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    #footer a {
+        font-size: 12px; /* Tamaño de fuente más pequeño */
+    }
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #8de38d;
+    border-radius: 50%;
+    margin: 5px;
 }

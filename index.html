@@ -21,24 +21,42 @@
 
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./img/olla-caliente.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
           Recetas Formoseñas ¡Jhetereï!
         </a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color: black;"></span>
+        </button>
 
-        <div>
-          <a href="enlace-de-Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="enlace-de-LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="enlace-de-Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="enlace-de-GitHub"><i class="fab fa-github"></i></a>
+        <div class="collapse navbar-collapse" style="color: black;" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="acerca.html">Acerca de</a>
+            </li>
+          </ul>
 
+          <div id="iconos">
+            <a href="enlace-de-Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="enlace-de-LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="enlace-de-Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="enlace-de-GitHub"><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
     </nav>
   </header>
+
 
   <main>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-ride="carousel">
@@ -63,7 +81,6 @@
           <div class="carousel-caption d-none d-md-block">
             <h5>Chupín de pescado</h5>
             <p>Se trata de un plato destacado de la gastronomía de Formosa.<br>
-
               Este guiso es preparado con vegetales, tomates frescos y pescado (siempre) de río. Un dato, la palabra
               chupín viene del quechua “chupi”, que significa “sopa”.</p>
             <a href="#recetas">
@@ -78,9 +95,9 @@
             <h5> Bife Koygua o Bife criollo</h5>
             <p>En el norte argentino le dicen bife criollo. En el NEA y en Paraguay, bife Koygua. Es un plato que
               también forma parte del recetario de Chaco y Corrientes.</p>
-              <a href="#recetas">
-                <button class="btn btn-success ver-receta-btn" onclick="mostrarReceta()">Ver Receta</button>
-              </a>   
+            <a href="#recetas">
+              <button class="btn btn-success ver-receta-btn" onclick="mostrarReceta()">Ver Receta</button>
+            </a>
 
           </div>
         </div>
@@ -91,9 +108,9 @@
             <p>El charque es básicamente la carne vacuna, que ha pasado por un proceso de deshidratación expuesta al sol
               por varios días cubierta de sal. Las empanadas formoseñas están rellenas de esta variedad de carne y son
               deliciosas.</p>
-              <a href="#recetas">
-                <button class="btn btn-success ver-receta-btn" onclick="mostrarReceta()">Ver Receta</button>
-              </a>   
+            <a href="#recetas">
+              <button class="btn btn-success ver-receta-btn" onclick="mostrarReceta()">Ver Receta</button>
+            </a>
 
           </div>
         </div>
@@ -113,9 +130,24 @@
 
 
   </div>
+  <footer>
+    <section>
+      <div id="footer">
+        <a class="navbar-brand" href="#">
+          <img src="./img/olla-caliente.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Recetas Formoseñas ¡Jhetereï! - Derechos Reservados
+        </a>
+      </div>
+      <div id="iconos2">
+        <a href="enlace-de-Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="enlace-de-LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="enlace-de-Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="enlace-de-GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+  </footer>
 
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
